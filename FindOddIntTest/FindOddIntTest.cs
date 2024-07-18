@@ -1,3 +1,5 @@
+using FindOddInt;
+
 namespace FindOddIntTest
 {
     [TestClass]

@@ -1,7 +1,7 @@
 namespace HighestLowestTest
 {
     [TestClass]
-    public class UnitTest1
+    public class HighestLowestTest
     {
         [TestMethod]
         public void TestMethod1()
