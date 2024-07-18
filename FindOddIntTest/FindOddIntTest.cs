@@ -39,5 +39,21 @@ namespace FindOddIntTest
             Assert.AreEqual(-1, result);
         }
 
+        [TestMethod]
+        public void ReturnNegativeOneIfNoAnswer()
+        {
+            // an array that does not contain an integer that appears an
+            // odd number of times should return -1
+
+            // arrange
+            int[] intArray = new int[] { 2, 2 };
+
+            // act
+            int result = FindOddIntTest.FindInt(intArray);
+
+            // assert should return -1
+            Assert.AreEqual(-1, result);
+        }
+
     }
 }
