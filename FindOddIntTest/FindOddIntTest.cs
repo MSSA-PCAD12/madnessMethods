@@ -25,7 +25,7 @@ namespace FindOddIntTest
         }
 
         [TestMethod]
-        public void ShouldHandleInteOverflow()
+        public void HandlesEmptyArray()
         {
             // empty array should return -1
 
