@@ -3,8 +3,14 @@ using System.Collections.Generic;
 
 namespace FindOddInt
 {
-    internal class FindOddInt
+    public class FindOddInt
     {
+        static void Main(string[] args)
+        {
+            // blank void Main method used as an entry point?
+            // If you run the project without this a build error pops up
+        }
+
         public static int FindInt(int[] seq)
         {
             // if empty input, return -1
