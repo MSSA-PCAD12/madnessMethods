@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mm1", "mm1.csproj", "{4FEA54F2-2607-4CDD-95AD-6E987C2E7DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindOddInt", "..\FindOddInt\FindOddInt.csproj", "{AA5D8A8B-A09A-4317-8A50-292B7353D541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighestLowest", "..\HighestLowest\HighestLowest.csproj", "{55B93A64-F05F-4FD5-8D83-CD1D0D4E8278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FEA54F2-2607-4CDD-95AD-6E987C2E7DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEA54F2-2607-4CDD-95AD-6E987C2E7DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEA54F2-2607-4CDD-95AD-6E987C2E7DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEA54F2-2607-4CDD-95AD-6E987C2E7DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5D8A8B-A09A-4317-8A50-292B7353D541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5D8A8B-A09A-4317-8A50-292B7353D541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5D8A8B-A09A-4317-8A50-292B7353D541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5D8A8B-A09A-4317-8A50-292B7353D541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B93A64-F05F-4FD5-8D83-CD1D0D4E8278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B93A64-F05F-4FD5-8D83-CD1D0D4E8278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B93A64-F05F-4FD5-8D83-CD1D0D4E8278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B93A64-F05F-4FD5-8D83-CD1D0D4E8278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C5A4EF6-5BFA-42A3-80F6-50447DBC2B62}
+	EndGlobalSection
+EndGlobal
