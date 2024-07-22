@@ -1,33 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MadnessMethodsClass
 {
     internal class RemoveSmallest
     {
         // Method to remove the smallest number from an array
-    public static int[] RemoveSmallestMethod(int[] numbers)
+        public static List<int> RemoveSmallestMethod(List<int> numbers)
         {
+            // Check if the input list is empty. If it is, return an empty list.
+            // Find the smallest value in the list.
+            // Create a new list that is a copy of the original list.
+            // Remove the first occurrence of the smallest value from the new list.
+            // Return the new list.
             // If the array is empty, return the array
-            if (numbers.Length == 0)
+
+            // Check if the list is empty
+            if (numbers == null || numbers.Count == 0)
             {
-                return numbers;
+                return new List<int>();
             }
-            // Find the smallest number in the array
-            int min = numbers.Min();
-            int[] result = new int[numbers.Length - 1];
-            int index = 0;
-            for (int i = 0; i < numbers.Length; i++)
+
+            // Iterate through the list to find the smallest value
+            int min = numbers[0];
+            for (int i = 1; i < numbers.Count; i++)
             {
-                if (numbers[i] != min)
+                if (numbers[i] < min)
                 {
-                    result[index] = numbers[i];
-                    index++;
+                    min = numbers[i];
                 }
             }
+
+            // Create a copy of the original list
+            List<int> result = new List<int>(numbers);
+
+            // Remove the first occurrence of the smallest value
+            for (int i = 0; i < result.Count; i++)
+            {
+                if (result[i] == min)
+                {
+                    result.RemoveAt(i);
+                    break;
+                }
+            }
+
+            // Return the new list
             return result;
         }
     }
