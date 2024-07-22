@@ -10,6 +10,9 @@ namespace MadnessMethodsClass
     {
         public static bool DivisibleByThree(string n)
         {
+
+            if (n == String.Empty) return false;
+
             int sum = 0;
 
             // loop through the characters in n and convert each of them to an integer
