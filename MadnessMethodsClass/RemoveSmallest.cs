@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace MadnessMethodsClass
 {
@@ -8,12 +9,11 @@ namespace MadnessMethodsClass
         // Method to remove the smallest number from an array
         public static List<int> RemoveSmallestMethod(List<int> numbers)
         {
-            // Check if the input list is empty. If it is, return an empty list.
-            // Find the smallest value in the list.
-            // Create a new list that is a copy of the original list.
-            // Remove the first occurrence of the smallest value from the new list.
-            // Return the new list.
-            // If the array is empty, return the array
+            //Check if the input list is empty.If it is, return an empty list.
+            //Iterate through the list to find the smallest value.
+            //Create a new list.
+            //Iterate through the original list, adding elements to the new list except the first occurrence of the smallest value.
+            //Return the new list.
 
             // Check if the list is empty
             if (numbers == null || numbers.Count == 0)
@@ -31,16 +31,20 @@ namespace MadnessMethodsClass
                 }
             }
 
-            // Create a copy of the original list
-            List<int> result = new List<int>(numbers);
+            // Create a new list
+            List<int> result = new List<int>();
+            bool found = false;
 
-            // Remove the first occurrence of the smallest value
-            for (int i = 0; i < result.Count; i++)
+            // Iterate through the original list
+            foreach (int number in numbers)
             {
-                if (result[i] == min)
+                if (!found && number == min)
                 {
-                    result.RemoveAt(i);
-                    break;
+                    found = true; // Skip the first occurrence of the smallest value
+                }
+                else
+                {
+                    result.Add(number);
                 }
             }
 
