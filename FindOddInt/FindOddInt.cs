@@ -7,8 +7,9 @@ namespace FindOddInt
     {
         static void Main(string[] args)
         {
-            // blank void Main method used as an entry point?
-            // If you run the project without this a build error pops up
+            int[] sampleData = { 1, 2, 3, 2, 3, 1, 3 };
+            int result = FindInt(sampleData);
+            Console.WriteLine($"The number with an odd count is: {result}");
         }
 
         public static int FindInt(int[] seq)
