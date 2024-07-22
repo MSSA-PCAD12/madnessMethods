@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadnessMethodsTest", "Madne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadnessMethodsClass", "MadnessMethodsClass\MadnessMethodsClass.csproj", "{DF649EA9-5C5A-4C6E-89A4-9A0FF876EA11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadnessMethodsClassTests1", "MadnessMethodsClassTests1\MadnessMethodsClassTests1.csproj", "{043D66C5-020D-4330-885F-D52C4E41AD08}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,16 +21,12 @@ Global
 		{DF649EA9-5C5A-4C6E-89A4-9A0FF876EA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF649EA9-5C5A-4C6E-89A4-9A0FF876EA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF649EA9-5C5A-4C6E-89A4-9A0FF876EA11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{043D66C5-020D-4330-885F-D52C4E41AD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{043D66C5-020D-4330-885F-D52C4E41AD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{043D66C5-020D-4330-885F-D52C4E41AD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{043D66C5-020D-4330-885F-D52C4E41AD08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		        SolutionGuid = {6C5A4EF6-5BFA-42A3-80F6-50447DBC2B62}
 		SolutionGuid = {79BBC97F-4777-4B27-8566-93EF542913A0}
+		        SolutionGuid = {6C5A4EF6-5BFA-42A3-80F6-50447DBC2B62}
 	EndGlobalSection
 EndGlobal
