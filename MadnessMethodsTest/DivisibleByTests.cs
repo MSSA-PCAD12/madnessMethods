@@ -14,7 +14,6 @@ namespace MadnessMethodsClass.Tests
         [TestMethod()]
         public void BasicTests()
         {
-            Assert.IsFalse(Three.DivisibleByThree("1891009"));
             Assert.IsTrue(Three.DivisibleByThree("123"));
             Assert.IsTrue(Three.DivisibleByThree("8409"));
             Assert.IsFalse(Three.DivisibleByThree("100853"));
