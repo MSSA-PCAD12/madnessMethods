@@ -11,7 +11,8 @@ namespace MadnessMethodsClass
         public static bool DivisibleByThree(string n)
         {
 
-            if (n == String.Empty) return false;
+            // if empty string or null, return false
+            if (string.IsNullOrEmpty(n)) return false;
 
             int sum = 0;
 
