@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace FindOddInt
+namespace MadnessMethodsClass
 {
     public class FindOddInt
     {
-        static void Main(string[] args)
-        {
-            int[] sampleData = { 1, 2, 3, 2, 3, 1, 3 };
-            int result = FindInt(sampleData);
-            Console.WriteLine($"The number with an odd count is: {result}");
-        }
-
         public static int FindInt(int[] seq)
         {
             // if empty input, return -1
@@ -50,7 +42,6 @@ namespace FindOddInt
 
             // If no number has an odd count, return -1
             return -1;
-
 
         }
     }

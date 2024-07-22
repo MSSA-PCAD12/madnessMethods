@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FindOddInt\FindOddInt.csproj" />
+    <ProjectReference Include="..\MadnessMethodsClass\MadnessMethodsClass.csproj" />
   </ItemGroup>
 
   <ItemGroup>
