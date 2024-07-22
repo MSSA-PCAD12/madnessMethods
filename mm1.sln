@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindOddIntTest", "FindOddIntTest\FindOddIntTest.csproj", "{BD073C25-13DF-4983-927D-C0097A5A0418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadnessMethodsTest", "MadnessMethodsTest\MadnessMethodsTest.csproj", "{BD073C25-13DF-4983-927D-C0097A5A0418}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadnessMethodsClass", "MadnessMethodsClass\MadnessMethodsClass.csproj", "{DF649EA9-5C5A-4C6E-89A4-9A0FF876EA11}"
 EndProject
