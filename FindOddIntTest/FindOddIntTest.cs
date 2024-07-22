@@ -1,3 +1,5 @@
+using MadnessMethodsClass;
+
 namespace FindOddIntTest
 {
     [TestClass]
@@ -18,7 +20,7 @@ namespace FindOddIntTest
             // Arange handled by DataRow accessories
 
             // Act
-            int result = FindOddInt.FindOddInt.FindInt(seq);
+            int result = FindOddInt.FindInt(seq);
 
             // Assert (expected is declared in the DataRow Accessories)
             Assert.AreEqual(expected, result);
@@ -33,7 +35,7 @@ namespace FindOddIntTest
             int[] intArray = Array.Empty<int>();
 
             // act
-            int result = FindOddInt.FindOddInt.FindInt(intArray);
+            int result = FindOddInt.FindInt(intArray);
 
             // assert should return -1
             Assert.AreEqual(-1, result);
@@ -49,7 +51,7 @@ namespace FindOddIntTest
             int[] intArray = { 2, 2 };
 
             // act
-            int result = FindOddInt.FindOddInt.FindInt(intArray);
+            int result = FindOddInt.FindInt(intArray);
 
             // assert should return -1
             Assert.AreEqual(-1, result);
