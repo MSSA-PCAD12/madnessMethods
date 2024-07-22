@@ -10,32 +10,22 @@ namespace MadnessMethodsClass
     {
         public static bool DivisibleByThree(string n)
         {
-            // convert given string to int
-            int intToCheck = int.Parse(n);
+            int sum = 0;
 
-            // divide int by 3 and convert to double
-            double num = intToCheck / 3;
-            Console.WriteLine("num: " + num); // console log to check logic
-
-            // convert the double to a string, so that we can check if it contains a period
-            // which would signify it is a decimal, therefore not divisible by 3
-            string stringNum = num.ToString();
-            Console.WriteLine("stringNum: " + stringNum); // console log to check logic
-
-            // if the string contains a . we return false because it is not divisible by 3
-            if (stringNum.Contains('.'))
+            // loop through the characters in n and convert each of them to an integer
+            foreach (char digit in n)
             {
-                Console.WriteLine("false"); // console log to check logic
-                return false;
-            }
-            else // if the string does not contain a . we return true since it is a whole number and divisible by 3
-            {
-                Console.WriteLine("true"); // console log to check logic
-                return true;
+                sum += digit - '0'; // Convert char to int
             }
 
-            // if the code above is not reached, throw an exception
-            throw new NotImplementedException();
+            // Check if it is divisible by subtracting 3 over and over again
+            while (sum >= 3)
+            {
+                sum -= 3;
+            }
+
+            // if the sum is equal to 0, then it is divisible
+            return sum == 0;
         }
     }
 }
