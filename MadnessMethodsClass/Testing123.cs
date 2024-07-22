@@ -6,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MadnessMethodsClass
-{
+{   
+    // public class 
     public static class Testing123
     {
         public static List<string> Testing123Method(List<string> stringList)
@@ -20,7 +21,7 @@ namespace MadnessMethodsClass
 
             for (int i = 0; i < stringList.Count; i++)
             {
-                // convert the given string to a stringbuilder
+                // convert the given string to a stringbuilder.
                 StringBuilder sb = new StringBuilder(stringList[i]);
 
                 // insert the line number, a colon, and a space
