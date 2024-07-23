@@ -10,8 +10,25 @@ namespace MadnessMethodsClass
     {
         public static string GimmeTheLetters(string sp)
         {
-            // blueprint method 
-            return "The Voodoo, who do What you don't dare do, people";
+            {
+
+                char first = sp[0];
+                char last = sp[sp.Length - 1];
+
+                string result = "";
+
+                for (char i = first; i <= last; i++)
+                {
+                    result += i;
+                }
+
+               return result;
+            }
+
+
+            
+
+
         }
     }
 }
