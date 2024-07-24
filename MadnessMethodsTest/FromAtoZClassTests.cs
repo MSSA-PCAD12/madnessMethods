@@ -8,13 +8,20 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass.Tests
 {
-    [TestClass()]
+       [TestClass()]
     public class FromAtoZClassTests
     {
         [TestMethod()]
-        public void GimmeTheLettersTest()
+        public void testingLowerCase()
         {
-            Assert.AreEqual(FromAtoZClass.GimmeTheLetters("test"), "The Voodoo, who do What you don't dare do, people");
+            Assert.AreEqual(FromAtoZClass.GimmeTheLetters("a-z"), "abcdefghijklmnopqrstuvwxyz");
+        }
+ 
+ 
+        [TestMethod()]
+        public void testingUpperCase()
+        {
+            Assert.AreEqual(FromAtoZClass.GimmeTheLetters("A-Z"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
         }
     }
 }
