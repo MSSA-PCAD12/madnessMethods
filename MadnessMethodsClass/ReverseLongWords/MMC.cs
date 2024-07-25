@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass.ReverseLongWords
 {
-    public class MMC
+    public static class MMC
     {
-        public static IEnumerable<string> MMJoinString(this IEnumerable<string> input)
+        public static string MMJoinString(this IEnumerable<string> input)
         {
-
+            throw new NotImplementedException("MMJoinString method is not implemented yet.");
         }
     }
 }
