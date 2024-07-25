@@ -14,12 +14,12 @@ namespace MadnessMethodsClass
                 return new List<T>();
 
             var unique = new List<T>();
-            T previous = default(T);
+            T previous = default;
             bool isFirst = true;
 
-            foreach (var item in iterable)
+            foreach (T item in iterable)
             {
-                if (isFirst || !item.Equals(previous))
+                if (isFirst || !item!.Equals(previous)) // !. lets it know it won't be null
                 {
                     unique.Add(item);
                     previous = item;
