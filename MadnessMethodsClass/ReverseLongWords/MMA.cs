@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass.ReverseLongWords
 {
-    public class MMA
+    public static class MMA
     {
-        public static IEnumerable<string> MMSplitString(this IEnumerable<string> input)
+        public static IEnumerable<string> MMSplitString(this string input)
         {
-
+            throw new NotImplementedException("MMJoinString method is not implemented yet.");
         }
     }
 }
