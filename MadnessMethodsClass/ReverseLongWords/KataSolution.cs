@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass.ReverseLongWords
 {
-    internal class Class1
+    public class KataSolution
     {
+        public static string SpinWords(string sentence)
+        {
+            IEnumerable<string> splittedString = sentence.MMSplitString();
+            // extension methods
+            IEnumerable<string> splittedWithLongWordsReversed = splittedString.MMReverseLongWords();
+            // another extension method just to reverse the Long string and ignore words < 5 char
+            string solution = splittedWithLongWordsReversed.MMJoinString();
+            // one more extension method that will combine all the string in to 1 final solution
+
+        }
     }
 }
