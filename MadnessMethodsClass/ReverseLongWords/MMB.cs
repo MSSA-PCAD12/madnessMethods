@@ -7,12 +7,22 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass.ReverseLongWords
 {
-    public class MMB
+    public static class MMB
     {
         public static IEnumerable<string> MMReverseLongWords (this IEnumerable<string> input)
         {
+            foreach (var word in input)
+            {
+                yield return Reverse(word);
+            }
+        }
 
-
+        // helper method to reverse a single string
+        private static string Reverse (string word)
+        {
+            char[] arr = word.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
         }
     }
 }
