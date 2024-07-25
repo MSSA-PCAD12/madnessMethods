@@ -9,9 +9,22 @@ namespace MadnessMethodsClass.ReverseLongWords
 {
     public static class MMC
     {
-        public static string MMJoinString(this IEnumerable<string> input)
+        public static string MMCombineString(this IEnumerable<string> input)
         {
-            throw new NotImplementedException("MMJoinString method is not implemented yet.");
+            // given an IEnumerable<string>
+            // return a string that combines all the strings and seperates them with a space
+
+            // init a string so that we can add the strings and spaces
+            string output = "";
+
+            // loop through given IEnumerable<string> and add each item to the string
+            foreach (string s in input)
+            {
+                output += s + " ";
+            }
+
+            // trim the trailing space of the string
+            return output.TrimEnd();
         }
     }
 }
