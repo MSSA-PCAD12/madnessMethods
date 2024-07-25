@@ -12,7 +12,7 @@ namespace MadnessMethodsClass.ReverseLongWords
         {
             IEnumerable<string> splittedString = sentence.MMSplitString();
             IEnumerable<string> splittedWithLongWordsReversed = splittedString.MMReverseLongWords();
-            string solution = splittedWithLongWordsReversed.MMJoinString();
+            string solution = splittedWithLongWordsReversed.MMCombineString();
             return solution;
 
         }
