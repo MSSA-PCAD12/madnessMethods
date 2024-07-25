@@ -13,7 +13,7 @@ namespace MadnessMethodsClass.ReverseLongWords
         {
             foreach (var word in input)
             {
-                yield return Reverse(word);
+                yield return word.Length >=5 ? Reverse(word) : word;
             }
         }
 

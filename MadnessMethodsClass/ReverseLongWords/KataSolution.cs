@@ -10,6 +10,7 @@ namespace MadnessMethodsClass.ReverseLongWords
     {
         public static string SpinWords(string sentence)
         {
+            
             IEnumerable<string> splittedString = sentence.MMSplitString();
             IEnumerable<string> splittedWithLongWordsReversed = splittedString.MMReverseLongWords();
             string solution = splittedWithLongWordsReversed.MMCombineString();
