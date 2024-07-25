@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MadnessMethodsClass
 {
-    internal class Unique
+    public class Unique
     {
         public static IEnumerable<T> UniqueInOrder<T>(IEnumerable<T> iterable)
         {
@@ -29,4 +29,5 @@ namespace MadnessMethodsClass
 
             return unique;
         }
+    }
 }
