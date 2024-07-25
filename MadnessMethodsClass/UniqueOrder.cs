@@ -32,12 +32,15 @@ namespace MadnessMethodsClass
 
         public static IEnumerable<T> UniqueInOrder2<T>(IEnumerable<T> iterable)
         {
+            if (iterable == null) yield break;
+
             T? previous = default;
 
             foreach (T item in iterable)
             {
-                if (previous == null || !item!.Equals(previous)) yield return item; // !. lets it know it won't be null
+                if (previous == null || !item!.Equals(previous))
                 {
+                    yield return item; // !. lets it know it won't be null
                     previous = item;
                 }
             }
