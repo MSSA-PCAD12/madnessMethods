@@ -14,7 +14,7 @@ namespace MadnessMethodsClass
                 return new List<T>();
 
             var unique = new List<T>();
-            T previous = default;
+            T? previous = default;
             bool isFirst = true;
 
             foreach (T item in iterable)
@@ -28,6 +28,19 @@ namespace MadnessMethodsClass
             }
 
             return unique;
+        }
+
+        public static IEnumerable<T> UniqueInOrder2<T>(IEnumerable<T> iterable)
+        {
+            T? previous = default;
+
+            foreach (T item in iterable)
+            {
+                if (previous == null || !item!.Equals(previous)) yield return item; // !. lets it know it won't be null
+                {
+                    previous = item;
+                }
+            }
         }
     }
 }
