@@ -23,15 +23,18 @@ namespace MadnessMethodsClass
 
             foreach (char c in text.ToLower())
             {
-                // convert to position in alphabet
+                Console.WriteLine($"Processing character: '{c}'"); // Debugging
                 if (char.IsLetter(c))
                 {
                     int position = c - 'a' + 1;
                     sb.Append(position).Append(' ');
+                    Console.WriteLine($"Current StringBuilder: '{sb}'"); // Debugging
                 }
             }
 
-            return sb.ToString().TrimEnd();
+            string result = sb.ToString().TrimEnd();
+            Console.WriteLine($"Final Result: '{result}'"); // Debugging
+            return result;
         }
     }
 }
