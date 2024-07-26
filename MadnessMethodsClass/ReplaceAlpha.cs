@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,41 @@ namespace MadnessMethodsClass
             }
 
             return sb.ToString().TrimEnd();
+        }
+
+        public static string AlphabetPosition2(string text)
+        {
+            
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in text.ToLower())
+            {
+                if (char.IsLetter(c))
+                {
+                    // checks if char c is a letter
+                    if (char.IsLetter(c))
+                    {
+                        // get alpha position and append to stringbuilder with a space after
+                        int position = GetAlphabetPosition(c);
+                        sb.Append(position).Append(" ");
+                    }
+                }
+            }
+            if (sb.Length > 0)
+            {
+                sb.Length--; // Remove the last appended space
+            }
+
+            return sb.ToString();
+
+            
+        }
+
+        private static int GetAlphabetPosition(char c)
+            // convert character to ASCII value
+            // subtract ASCII value of 'a' from ASCII value of 'char c' to give zero-based index of the character
+            // add 1 to convert to one-based index
+        {
+            return (int)c - (int)'a' + 1;
         }
     }
 }
