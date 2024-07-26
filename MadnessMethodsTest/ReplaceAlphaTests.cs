@@ -65,5 +65,12 @@ namespace MadnessMethodsClass.Tests
             var result = ReplaceAlpha.AlphabetPosition("The sun sets at 10:30!");
             Assert.AreEqual("20 8 5 19 21 14 19 5 20 19 1 20", result);
         }
+
+        [TestMethod()]
+        public void StringWithNumbersAndPunctuationTest2()
+        {
+            var result = ReplaceAlpha.AlphabetPosition2("The sun sets at 10:30!");
+            Assert.AreEqual("20 8 5 19 21 14 19 5 20 19 1 20", result);
+        }
     }
 }
