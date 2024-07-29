@@ -41,15 +41,12 @@ namespace MadnessMethodsClass
             StringBuilder sb = new StringBuilder();
             foreach (char c in text.ToLower())
             {
+                // checks if char c is a letter
                 if (char.IsLetter(c))
                 {
-                    // checks if char c is a letter
-                    if (char.IsLetter(c))
-                    {
-                        // get alpha position and append to stringbuilder with a space after
-                        int position = GetAlphabetPosition(c);
-                        sb.Append(position).Append(" ");
-                    }
+                    // get alpha position and append to stringbuilder with a space after
+                    int position = GetAlphabetPosition(c);
+                    sb.Append(position).Append(" ");
                 }
             }
             if (sb.Length > 0)
